@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="km5cyYEwmRkdIsKPSlC4">
+    <mxGraphModel dx="1151" dy="1246" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XsD9xnF_yZouGbRetyFQ-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="390" width="490" x="350" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="XsD9xnF_yZouGbRetyFQ-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Przeglądarka uzytkownika&lt;div&gt;(Frontend: React + Tailwind)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="150" x="10" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="XsD9xnF_yZouGbRetyFQ-3" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;fillColor=none;" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="180" y="295" as="sourcePoint" />
+            <mxPoint x="330" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XsD9xnF_yZouGbRetyFQ-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="Backend Server&lt;div&gt;(API: Python + FastAPI)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="170" x="370" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="XsD9xnF_yZouGbRetyFQ-5" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=none;" value="Relacyjna baza danych&lt;br&gt;&lt;div&gt;(&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;PostgreSQL&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="120" x="660" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="XsD9xnF_yZouGbRetyFQ-8" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;boundedLbl=1;fillColor=none;" value="&amp;nbsp; &amp;nbsp; File Storage&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;(Docker Volume)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="130" x="660" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="XsD9xnF_yZouGbRetyFQ-9" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;fillColor=none;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="550" y="230" as="sourcePoint" />
+            <mxPoint x="630" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XsD9xnF_yZouGbRetyFQ-10" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;fillColor=none;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="555" y="350" as="sourcePoint" />
+            <mxPoint x="635" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XsD9xnF_yZouGbRetyFQ-15" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=none;" value="REST API (HTTP / JSON)" vertex="1">
+          <mxGeometry height="60" width="88" x="211" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="XsD9xnF_yZouGbRetyFQ-16" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=none;" value="Środowisko Docker (Docker Compose)" vertex="1">
+          <mxGeometry height="10" width="130" x="540" y="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
