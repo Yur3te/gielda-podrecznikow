@@ -1,0 +1,40 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Niezalogowany\nUżytkownik" as Guest
+actor "Student" as Student
+actor "Administrator" as Admin
+
+' Dziedziczenie ról - Student ma wszystko to co Gość
+Guest <|-- Student
+
+rectangle "Giełda używanych podręczników" {
+  usecase "Przeglądanie i wyszukiwanie ofert" as UC_Search
+  usecase "Rejestracja i logowanie" as UC_Auth
+  usecase "Wystawienie ogłoszenia" as UC_Add
+  usecase "Edycja / usunięcie własnego ogłoszenia" as UC_Edit
+  usecase "Rezerwacja podręcznika" as UC_Reserve
+  usecase "Oznaczenie książki jako sprzedanej" as UC_Sold
+  usecase "Zgłoszenie naruszenia oferty" as UC_Report
+  usecase "Moderacja i usuwanie ogłoszeń" as UC_Mod
+  usecase "Zarządzanie słownikami\n(kierunki, przedmioty)" as UC_Dict
+}
+
+Guest --> UC_Search
+Guest --> UC_Auth
+
+Student --> UC_Add
+Student --> UC_Edit
+Student --> UC_Reserve
+Student --> UC_Sold
+Student --> UC_Report
+
+Admin --> UC_Mod
+Admin --> UC_Dict
+
+' Relacje include / extend
+UC_Add ..> UC_Auth : <<include>>
+UC_Reserve ..> UC_Auth : <<include>>
+UC_Reserve ..> UC_Search : <<extend>>
+@enduml
